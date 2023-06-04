@@ -1,0 +1,112 @@
+<html>
+    <head>
+        Task-40
+    </head>
+    <body>
+        <script>
+            document.write("<br>");
+            document.write("Concat Method");
+            document.write("<br>")
+           const a1=["10"];
+           const a2=["20"];
+           const a3=["30"];
+           const a4=["40"];
+           const a5=["50"];
+           const a6=["60"];
+           const a=a1.concat(a2,a3,a4,a5,a6);
+           document.write("<br>");
+           document.write("<br>");
+           document.write(a);
+           document.write("<br>");
+           document.write("<br>");
+           document.write("Copywithin Method");
+           document.write("<br>");
+           document.write("<br>");
+           const b=a.copyWithin(3,0,5);
+           document.write(b);
+           document.write("<br>");
+           document.write("<br>");
+           document.write("Every Method");
+           const d=a.every(checknum);
+           document.write("<br>");
+           document.write(d);
+           function checknum(num){
+            return num>100;
+           }
+           document.write("<br>");
+           document.write("<br>");
+           document.write("Some Method");
+           const e=a.some(checknum);
+           document.write("<br>");
+           document.write(e);
+           function checknum(num){
+            return num<100;
+           }
+           document.write("<br>");
+           document.write("<br>");
+           document.write("Filter Method");
+           const f=a.filter(check);
+           document.write("<br>");
+           document.write(f);
+           function check(num){
+            return num>10 && num<=30;
+           }
+           document.write("<br>");
+           document.write("<br>");
+           document.write("Find Method");
+           const g=a.find(function(a){
+            return a>10&&a<=20;
+           });
+           document.write("<br>");
+           document.write("<br>");
+           document.write(g);
+           document.write("<br>");
+           document.write("<br>");
+           document.write("FindIndex Method");
+           const h=a.findIndex(function(a){
+            return a>10&&a<=20;
+           });
+           document.write("<br>");
+           document.write("<br>");
+           document.write(h);
+           document.write("<br>");
+           document.write("<br>");
+           document.write("FindIndexOf Method");
+           const i=a.indexOf(function(a){
+            return a>10&&a<=20;
+           });
+           document.write("<br>");
+           document.write("<br>");
+           document.write(i);
+           document.write("<br>");
+           document.write("<br>");
+           document.write("lastIndexOf Method");
+           const j=a.lastIndexOf(function(a){
+            return a>10&&a<=40;
+           });
+           document.write("<br>");
+           document.write("<br>");
+           document.write(j);
+           document.write("<br>");
+           document.write("<br>");
+           document.write("Push Method");
+           document.write("<br>");
+           const k=b.push(100);
+           document.write(k);
+           document.write("<br>");
+           document.write(b);
+           document.write("<br>");
+           document.write("Pop Method");
+           const l=b.pop();
+           document.write("<br>");
+           document.write(b);
+           document.write("<br>");
+           document.write("<br>");
+           document.write("Shift Method");
+           const m=b.shift(0);
+           document.write("<br>");
+           document.write(b);
+
+        </script>
+    </body>
+</html>
